@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneXpress - Welcome</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body class="intro-page">
+    <div class="intro-container">
+        <div class="intro-content">
+            <div class="logo">
+                <h1 class="logo-text">📱 PhoneXpress</h1>
+            </div>
+            <div class="tagline">
+                <h2>Your One-Stop Shop for Premium Phones</h2>
+                <p>Experience the future of mobile shopping with our AI-powered assistant</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Assistant</h3>
+                    <p>Get instant help from our intelligent chatbot</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive prices in Philippine Peso</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Ordering</h3>
+                    <p>Order your phone in minutes</p>
+                </div>
+            </div>
+            <a href="{% url 'chatbot' %}" class="cta-button">
+                Start Shopping →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
